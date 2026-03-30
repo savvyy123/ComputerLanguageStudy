@@ -1,0 +1,41 @@
+/* 以下を参考に自由にスタイルを設定してください
+
+   body：背景色 #f5f5f5、padding 40px
+   .card：幅 300px、背景色 white、border・border-radius・padding を設定
+   h2：文字色・フォントサイズを設定
+   p：文字色・margin-bottom を設定
+   .btn：display inline-block、背景色・文字色・padding・border-radius を設定
+   * { box-sizing: border-box; } も忘れずに！
+*/
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #1434ee;
+  padding: 40px;
+}
+.card {
+    margin: 250px auto;
+  width: 300px;
+  background-color: white;
+  border: 5px solid #1b1b1b;
+  border-radius: 10px;
+  padding: 20px;
+}
+h2 {
+  color: #333;
+  font-size: 36px;
+}
+p {
+  color: #cfcfcf;
+  margin-bottom: 30px;
+}
+.btn {
+  display: inline-block;
+  background-color: #1b1b1b;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+}
