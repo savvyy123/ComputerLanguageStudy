@@ -1,0 +1,15 @@
+# Build outputs
+build/
+*.o
+*.a
+*.so
+*.dylib
+*.exe
+
+# Executable files
+day4_2
+day4
+
+# IDE
+.vscode/settings.json
+.DS_Store
