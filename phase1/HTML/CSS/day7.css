@@ -1,0 +1,95 @@
+/* CSS変数 */
+:root {
+  --color-bg: #0f0f0f;
+  --color-text: #f0f0f0;
+  --color-accent: #ffffff;
+  --color-card: #1e1e1e;
+  --font-main: 'Helvetica Neue', sans-serif;
+}
+
+/* リセット */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-main);
+}
+
+/* ナビゲーションバー */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 1px solid #cccccc;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  color: var(--color-accent);
+}
+
+.menu a {
+  color: var(--color-text);
+  text-decoration: none;
+  margin-left: 24px;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+.menu a:hover {
+  color: var(--color-accent);
+}
+
+/* ヒーローセクション */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  letter-spacing: 0.2em;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #aaa;
+}
+
+/* 作品カード */
+.works {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: var(--color-card);
+  width: 200px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #ccc;
+  border: 1px solid #333;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}

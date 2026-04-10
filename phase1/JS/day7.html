@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body { font-family: sans-serif; padding: 40px; }
+    input { padding: 8px; font-size: 16px; }
+    button { padding: 8px 16px; font-size: 16px; cursor: pointer; }
+    li { font-size: 16px; margin: 8px 0; cursor: pointer; }
+    .done { text-decoration: line-through; color: #aaa; }
+  </style>
+</head>
+<body>
+  <h1>ToDoリスト</h1>
+  <input type="text" id="input" placeholder="やることを入力">
+  <button id="add-btn">追加</button>
+  <ul id="list"></ul>
+
+  <script>
+    // 1. ボタンをクリックしたら input の値を取得
+    addBtn.addEventListener("click", () => {
+        const text = input.value;
+        if (text === "") return;
+
+        // 2. li 要素を作成してテキストをセット
+        const li = document.createElement("li");
+        li.textContent = text;
+
+        // 3. ul に追加
+        list.appendChild(li);
+
+        // 4. li をクリックしたら "done" クラスをトグル（取り消し線）
+        li.addEventListener("click", () => {
+            li.classList.toggle("done");
+        });
+
+        // 5. input をクリア
+        input.value = "";
+    });
+
+    const input = document.getElementById("input");
+    const addBtn = document.getElementById("add-btn");
+    const list = document.getElementById("list");
+
+    // ここに書いてね
+
+
+
+  </script>
+</body>
+</html>
