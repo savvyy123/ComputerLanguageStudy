@@ -1,0 +1,26 @@
+<!-- 課題：HTTP の知識を活かしたエラーページを作ろう -->
+<!-- 今日学んだステータスコード（200・404・500）をテーマにしたエラーページを1ページ作ってください。 -->
+<!-- 条件 -->
+
+<!-- index.html と style.css の2ファイル構成 -->
+<!-- 404エラーページ風のデザイン（「ページが見つかりません」など） -->
+<!-- 大きな数字（404）を目立つように表示する -->
+<!-- ホームに戻るリンクを1つ入れる -->
+<!-- background-color・color・font-size を使って見た目を整える -->
+ 
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Not Found</title>
+    <link rel="stylesheet" href="day1.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="error-code">404</h1>
+        <p class="error-message">ページが見つかりません</p>
+        <a href="day1.html" class="home-link">ホームに戻る</a>
+    </div>
+</body>
+</html>
