@@ -1,0 +1,35 @@
+<!-- 課題：URLの構造を説明するページを作ろう -->
+<!-- 今日学んだ URL・DNS・HTTP の知識を使って、URL の構造を視覚的に説明するページを作ってください。 -->
+<!-- 条件 -->
+
+<!-- day2.html と day2.css の2ファイル構成 -->
+<!-- URL の各パーツ（プロトコル・ドメイン・パス・クエリ）を色分けして表示する -->
+<!-- 各パーツの説明文を入れる -->
+<!-- Google Fonts を使って好きなフォントを適用する -->
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>URLの構造</title>
+  <link rel="stylesheet" href="day2.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1>URLの構造</h1>
+  <div class="url-bar">
+    <span class="protocol">https://</span>
+    <span class="domain">www.example.com</span>
+    <span class="path">/blog/article</span>
+    <span class="query">?id=5</span>
+  </div>
+  <!-- 各パーツの説明をここに追加しよう -->
+  <div class="explanation">
+    <p><span class="protocol">https://</span>は、通信プロトコルを示します。</p>
+    <p><span class="domain">www.example.com</span>は、サーバーの名前です。</p>
+    <p><span class="path">/blog/article</span>は、サーバー上のファイルやリソースの場所を示します。</p>
+    <p><span class="query">?id=5</span>は、サーバーに渡すパラメータを示します。</p>
+  </div>
+
+</body>
+</html>
